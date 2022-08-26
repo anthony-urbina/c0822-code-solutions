@@ -7,7 +7,7 @@ div > label {
   display: block;
   text-indent: 1em;
   font-family: "Brandon Grotesque", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 450;
   text-transform: uppercase;
   color: #424242;
@@ -20,9 +20,9 @@ button {
   border: #ec5c57;
   border-radius: 1.5rem;
   font-family: "Brandon Grotesque", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 450;
-  padding: 0.75rem 2.25rem;
+  padding: 0.65rem 1.9rem;
   text-transform: uppercase;
   margin-top: 0.75rem;
 }
