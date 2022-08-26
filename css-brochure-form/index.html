@@ -10,41 +10,39 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="h2">
+  <div class="container" id="h2">
     <h2>Learn More</h2>
-  </div>
-  <form>
-    <div>
-      <div id="first">
-        <label for="email">Company Email</label>
+    <form>
+      <div class="label-2">
+        <label class="label" for="email">Company Email</label>
       </div>
       <div>
-        <input type="email" id="email" placeholder="sally@company.co">
-      </div>
-      <div id="second">
-        <label for="name">Name</label>
+        <input type="email" placeholder="sally@company.co">
       </div>
       <div>
-        <input type="text" id="name" placeholder="Sally Smith">
+        <label class="label" for="name">Name</label>
       </div>
       <div>
-        <label for="where-hiring">Where are you hiring?</label>
+        <input type="text" placeholder="Sally Smith">
       </div>
       <div>
-        <input type="text" id="where-hiring" placeholder="City, Country">
+        <label class="label" for="where-hiring">Where are you hiring?</label>
       </div>
       <div>
-        <label for="how-many-hiring">How many engineers are you hiring in the next 6 months</label>
+        <input type="text" placeholder="City, Country">
+      </div>
+      <div>
+        <label class="label" for="how-many-hiring">How many engineers are you hiring in the next 6 months</label>
       </div>
       <div>
         <select name="Engineers being hired in 6 months" id="how-many-hiring">
           <option value="1-2">1-2 Engineers</option>
         </select>
       </div>
-      <div id="button">
+      <div class="button">
         <button>Submit</button>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 </body>
 </html>
