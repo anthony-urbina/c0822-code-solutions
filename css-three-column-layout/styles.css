@@ -1,0 +1,53 @@
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.graphic-two {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.graphic {
+  width: 60%;
+}
+
+.column-one-third {
+  flex-basis: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  margin-top: 20px;
+  font-family: Lato, sans-serif;
+}
+
+.paragraph {
+  text-align: center;
+  margin-top: 3px;
+  font-family: Lato, sans-serif;
+  font-size: small;
+  line-height: 20px;
+}
+
+.h2 {
+  font-family: Lato, sans-serif;
+}
