@@ -1,3 +1,7 @@
+.page-container {
+  width: 1425.2px;
+}
+
 .pen-container {
   background-color: #525351;
   margin: 0 auto;
@@ -52,10 +56,11 @@ p {
 
 .final-container {
   margin-top: 40px;
+  padding-bottom: 36px;
 }
 
 .final-text {
-  color: #525351;
+  color: #767676;
   font-size: 20px;
   display: inline;
   margin-right: 0;
@@ -76,21 +81,33 @@ p {
 button {
   border-radius: 0.25rem;
   font-size: 20px;
+  font-family: Avenir, sans-serif;
   background-color: #294363;
   border-color: #294363;
   color: white;
   padding: 13px 45px;
+  border-style: none;
 }
 
 .get-started-button {
-  width: 59%;
+  width: 61.9%;
+  padding: 10px;
   text-align: right;
+}
+
+.get-started-button button {
+  padding: 16px 48px;
+}
+
+.ready-container > div {
+  margin-right: 10px;
 }
 
 .ready-container {
   display: flex;
   margin-bottom: 33px;
-  color: #525351;
+  padding-top: 20px;
+  color: #767676;
   height: 130px;
   align-items: center;
   border-top-style: solid;
@@ -108,6 +125,7 @@ button {
 .clinicians-container {
   padding-left: 10px;
   text-align: center;
+  color: #767676;
 }
 
 .cascade-ward-text-container {
@@ -127,21 +145,120 @@ button {
 
 .cascade-ward-text-container p {
   font-size: 20px;
-  color: #525351;
+  color: #767676;
   line-height: 63px;
   text-align: center;
 }
 
 .clinicians-container h1 {
   font-family: "Tiempos Headline", sans-serif;
-  color: #525351;
+  color: #767676;
   font-size: 29px;
+  margin-top: 60px;
 }
 
 .clinicians-container p {
   line-height: 27px;
+  font-size: 15.5px;
+  color: #767676;
 }
 
 .clinicians-header {
   margin-bottom: 13px;
+}
+
+.overlay {
+  background: linear-gradient(transparent, rgb(86 83 83 / 50%));
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 87.52%;
+  height: 81%;
+  margin-left: 90px;
+  margin-top: 75px;
+}
+
+.hero-container {
+  background-image: url("images/hero.jpg");
+  background-size: 1289px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  width: 93%;
+  height: 91%;
+  padding: 40px 0;
+  padding-left: 42px;
+}
+
+.hero-section-container {
+  height: 791px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 39px;
+  border-top-style: solid;
+  border-top-color: lightgray;
+  position: relative;
+}
+
+.hero-container p {
+  color: white;
+  line-height: 27px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-container h1 {
+  color: white;
+  font-size: 41px;
+  font-weight: 500;
+  margin-left: 90px;
+  margin-top: 106px;
+  position: relative;
+  z-index: 1;
+}
+
+#get-started-button {
+  margin-left: 80px;
+  text-align: left;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-header-container {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.page-header-text-container {
+  display: flex;
+  margin-left: 2px;
+  text-align: right;
+  width: 100%;
+  height: 90%;
+}
+
+.blue-canvas-logo-container {
+  margin-top: 33px;
+  margin-right: 323px;
+  height: 90%;
+}
+
+.page-header-text-container p {
+  margin: 12px 34px;
+  margin-top: 27px;
+  color: #aeaeae;
+  font-size: 17px;
+}
+
+.header-button button {
+  margin: 10px;
+  padding: 12px 16px;
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  margin-top: 23px;
 }
