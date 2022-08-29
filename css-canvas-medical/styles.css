@@ -167,6 +167,7 @@ button {
   margin-bottom: 13px;
 }
 
+/*
 .overlay {
   background: linear-gradient(transparent, rgb(86 83 83 / 50%));
   position: absolute;
@@ -179,7 +180,6 @@ button {
   margin-left: 90px;
   margin-top: 75px;
 }
-
 .hero-container {
   background-image: url("images/hero.jpg");
   background-size: 1289px;
@@ -190,6 +190,7 @@ button {
   padding: 40px 0;
   padding-left: 42px;
 }
+
 
 .hero-section-container {
   height: 791px;
@@ -202,6 +203,8 @@ button {
   border-top-color: lightgray;
   position: relative;
 }
+
+
 
 .hero-container p {
   color: white;
@@ -218,6 +221,13 @@ button {
   margin-top: 106px;
   position: relative;
   z-index: 1;
+}
+*/
+
+.hero-image {
+  height: 550px;
+  width: 1130px;
+  filter: grayscale(50%);
 }
 
 #get-started-button {
