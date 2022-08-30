@@ -167,19 +167,6 @@ button {
   margin-bottom: 13px;
 }
 
-/*
-.overlay {
-  background: linear-gradient(transparent, rgb(86 83 83 / 50%));
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 87.52%;
-  height: 81%;
-  margin-left: 90px;
-  margin-top: 75px;
-}
 .hero-container {
   background-image: url("images/hero.jpg");
   background-size: 1289px;
@@ -189,8 +176,37 @@ button {
   height: 91%;
   padding: 40px 0;
   padding-left: 42px;
+  filter: grayscale(10%) brightness(85%) saturate(90%);
+  position: relative;
 }
 
+.page-header-text-container p {
+  margin: 12px 34px;
+  margin-top: 27px;
+  color: #aeaeae;
+  font-size: 17px;
+}
+
+#hero-text {
+  position: absolute;
+  margin-bottom: 145px;
+  left: 183px;
+}
+
+#hero-text h1 {
+  font-size: 38px;
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 500;
+}
+
+#hero-text p {
+  line-height: 29px;
+  margin-left: 0;
+}
+
+.hero-header-text-content {
+  color: #fafafa;
+}
 
 .hero-section-container {
   height: 791px;
@@ -201,41 +217,13 @@ button {
   padding-right: 39px;
   border-top-style: solid;
   border-top-color: lightgray;
-  position: relative;
-}
-
-
-
-.hero-container p {
-  color: white;
-  line-height: 27px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-container h1 {
-  color: white;
-  font-size: 41px;
-  font-weight: 500;
-  margin-left: 90px;
-  margin-top: 106px;
-  position: relative;
-  z-index: 1;
-}
-*/
-
-.hero-image {
-  height: 550px;
-  width: 1130px;
-  filter: grayscale(50%);
 }
 
 #get-started-button {
-  margin-left: 80px;
   text-align: left;
-  margin-top: 30px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  padding-left: 0;
+  padding-top: 39px;
 }
 
 .page-header-container {
@@ -256,13 +244,6 @@ button {
   margin-top: 33px;
   margin-right: 323px;
   height: 90%;
-}
-
-.page-header-text-container p {
-  margin: 12px 34px;
-  margin-top: 27px;
-  color: #aeaeae;
-  font-size: 17px;
 }
 
 .header-button button {
