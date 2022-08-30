@@ -48,10 +48,10 @@ var orderHistory = [
       { type: 'book', itemName: 'The Art of SQL', author: 'Faroult, Stephane', beforeTax: '33.99', returnWindowClose: 'Aug 4, 2020', imageURL: 'image' },
       { type: 'harware', itemName: 'Gamecube Controller - Super Smash Bros. Edition (Nintentdo Switch)', beforeTax: '94.95', returnWindowClose: 'Aug 4, 2020', imageURL: 'image' }
     ],
-    orderPlaced: 'July 4 2020',
-    delivered: 'Jul 7,2020',
+    orderPlaced: 'July 3 2020',
+    delivered: 'Jul 5,2020',
     shipTo: 'JS Masher',
-    orderNumber: '#114-2875557-9059409',
-    total: '17.22'
+    orderNumber: '#113-2648248',
+    total: '138.93'
   }
 ];
