@@ -39,10 +39,10 @@ button:active {
   transform: translateY(0.25rem);
 }
 
-div.pokeball-row > div.pokeball-wrapper:first-child > img.pokeball {
+div.pokeball-wrapper:first-child > img.pokeball {
   transform: rotate(-30deg);
 }
 
-div.pokeball-row > div.pokeball-wrapper:last-child > img.pokeball {
+div.pokeball-wrapper:last-child > img.pokeball {
   transform: rotate(30deg);
 }
