@@ -13,9 +13,7 @@ return the values of the name property
 function getStudentNames(students) {
   var studentNames = [];
   for (var i = 0; i < students.length; i++) {
-    if (typeof students[i].name === 'string') {
-      studentNames.push(students[i].name);
-    }
+    studentNames.push(students[i].name);
   }
   return studentNames;
 }
