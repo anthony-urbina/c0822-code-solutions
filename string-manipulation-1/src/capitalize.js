@@ -13,12 +13,9 @@ and return the word in its new form
 
 function capitalize(word) {
   var upper = '';
-  for (var i = 0; i < word.length; i++) {
-    if (i === 0) {
-      upper = upper.concat(word[0].toUpperCase());
-    } else if (i > 0 && i < word.length) {
-      upper = upper.concat(word[i].toLowerCase());
-    }
+  upper += (word[0].toUpperCase());
+  for (var i = 1; i < word.length; i++) {
+    upper += (word[i].toLowerCase());
   }
   return upper;
 }

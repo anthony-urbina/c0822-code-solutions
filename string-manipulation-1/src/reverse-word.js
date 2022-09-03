@@ -9,7 +9,7 @@ once finished, return the new string
 function reverseWord(word) {
   var newString = '';
   for (var i = 1; i <= word.length; i++) {
-    newString = newString.concat(word[word.length - i]);
+    newString += (word[word.length - i]);
   }
   return newString;
 }
