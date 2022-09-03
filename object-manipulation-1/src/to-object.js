@@ -1,6 +1,7 @@
 /* exported toObject */
 /*
 create a function that creates and returns an object from the two string elements in an array
+create a storage container
 set the first item in the array equal to the property of the object
 then set the second item in the array equal to the property of the object at key
 return that object
