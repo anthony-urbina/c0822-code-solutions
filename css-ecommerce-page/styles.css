@@ -14,12 +14,18 @@ p {
 
 .row {
   display: flex;
+}
+
+.row-padding {
   padding-left: 80px;
   padding-right: 80px;
 }
 
-.one-five {
+.one-five-column {
   flex-basis: 20%;
+}
+
+.column-margin {
   margin: 10px;
 }
 
