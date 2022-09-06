@@ -36,8 +36,12 @@ h3 {
   width: 100%;
 }
 
-.row-2 {
+.row {
   display: flex;
+}
+
+.row-display {
+  justify-content: center;
 }
 
 .padding-row-2 {
@@ -61,10 +65,6 @@ h3 {
 img {
   padding-bottom: 4.5rem;
   padding-right: 8px;
-}
-
-.row-3 {
-  text-align: center;
 }
 
 button {
