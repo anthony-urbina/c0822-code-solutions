@@ -1,6 +1,3 @@
-/*
-add a click event listener to hotButton that increments the counter variable
-*/
 var clickCount = 0;
 var $hotButton = document.querySelector('.hot-button');
 var $clickCount = document.querySelector('.click-count');
