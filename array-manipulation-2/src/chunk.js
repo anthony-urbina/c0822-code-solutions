@@ -13,24 +13,56 @@ then add whatever is left to a new sub container
 once there are no more values to iterate through,
 push the sub array to the main container
 
-split the array at the item that is equal to size
-send it to a sub array, then send it to the main array
+Where modulus = 0
+I want to send array[i] to the sub array, push that to the main array, then wipe it
+So I can continue the process up until i is equal to todos.length
+Once this is finished I want to make sure the sub array is empty
+Return the value of the container
 
-create a function that returns a new array that contains an array. the sub arrays will have lengths equal to size, any remaining elements will be sent to sub arrays
-all sub arrays will be sent to the new array
-create a storage container
-create 2 sub containers
-iterate through the array of array starting from the first character
-up until you reach where i = size - 1
+Where modulus != 0
+Then you want to iterate, sending each index to the sub array up until i is equal to count
+Then you push the sub array to the main array then wipe it
+Then you continue
+Let the statement iterate, pushing each leftover value into the sub array Up until i is equal to todos.length
+Then push the sub container to the main container and empty the sub container
+Return the value of the container
+
 */
 
-// function chunk(array, size) {
-//   var mainContainer = [];
-//   var subC = [];
-//   for (var i = 0; i < array.length; i++) {
-//     if (i < size & i === size) {
-//       subC.push(array[i]);
-//     }
-//   }
-//   return subC;
-// }
+function chunk(array, size) {
+  var container = [];
+  var miniContainer = [];
+  for (var i = 0; i < array.length; i++) {
+    if (array.length % size === 0) {
+      if (i < size) {
+        miniContainer.push(array[i]);
+        if (miniContainer.length === size) {
+          container.push(miniContainer);
+          miniContainer = [];
+        }
+      } else if (i >= size && i < array.length) {
+        miniContainer.push(array[i]);
+        if (miniContainer.length === size) {
+          container.push(miniContainer);
+          miniContainer = [];
+        }
+      }
+    } else if (size % array.length !== 0) {
+      if (i < size) {
+        miniContainer.push(array[i]);
+        if (miniContainer.length === size) {
+          container.push(miniContainer);
+          miniContainer = [];
+        }
+      } else if (i >= size && i < array.length) {
+        miniContainer.push(array[i]);
+        if (miniContainer.length === array.length - size || miniContainer.length === size || miniContainer.length === array.length - i) {
+          container.push(miniContainer);
+          miniContainer = [];
+
+        }
+      }
+    }
+  }
+  return container;
+}
