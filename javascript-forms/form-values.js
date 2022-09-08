@@ -6,8 +6,8 @@ function handleSubmit(event) {
   event.preventDefault();
 
   var name = $form.elements.name.value;
-  var email = $form.elements.name.value;
-  var message = $form.elements.name.value;
+  var email = $form.elements.email.value;
+  var message = $form.elements.message.value;
 
   var formData = {
     name,
