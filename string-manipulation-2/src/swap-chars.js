@@ -18,10 +18,8 @@ function swapChars(firstIndex, secondIndex, string) {
   for (var i = 0; i < string.length; i++) {
     if (i === firstIndex) {
       container += string[secondIndex];
-      continue;
     } else if (i === secondIndex) {
       container += string[firstIndex];
-      continue;
     } else {
       container += string[i];
     }

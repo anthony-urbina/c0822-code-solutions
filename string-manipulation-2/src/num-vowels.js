@@ -13,16 +13,12 @@ do this until there are no more characters to go through
  */
 
 function numVowels(string) {
-  var container = null;
+  var container = 0;
   string = string.toLowerCase();
-  if (string === '') {
-    return 0;
-  } else {
-    for (var i = 0; i < string.length; i++) {
-      if (string[i] === 'a' || string[i] === 'e' || string[i] === 'i' || string[i] === 'o' || string[i] === 'u') {
-        container += 1;
-      }
+  for (var i = 0; i < string.length; i++) {
+    if (string[i] === 'a' || string[i] === 'e' || string[i] === 'i' || string[i] === 'o' || string[i] === 'u') {
+      container += 1;
     }
-    return container;
   }
+  return container;
 }

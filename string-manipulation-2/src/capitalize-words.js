@@ -29,7 +29,6 @@ function capitalizeWords(word) {
   for (var i = 1; i < word.length; i++) {
     if (word[i - 1] === ' ') {
       container += word[i].toUpperCase();
-      continue;
     } else {
       container += word[i];
     }
