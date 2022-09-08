@@ -10,13 +10,19 @@ var $button = document.querySelector('.button-moon');
 var $container = document.querySelector('.container-moon');
 
 $button.addEventListener('click', flickSwitch);
+var on = false;
 
 function flickSwitch(event) {
-  if ($container.className !== 'button container-sun') {
+
+  if (on === false) {
     $container.className = 'button container-sun';
     $button.className = 'button button-sun';
-  } else if ($container.className === 'button container-sun') {
+    on = true;
+    return on;
+  } else if (on === true) {
     $container.className = 'button container-moon';
     $button.className = 'button button-moon';
+    on = false;
+    return on;
   }
 }
