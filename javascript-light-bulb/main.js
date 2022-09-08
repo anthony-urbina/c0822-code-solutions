@@ -8,16 +8,14 @@ create a variable that counts the amount of clicks on the button
 
 var $button = document.querySelector('.button-moon');
 var $container = document.querySelector('.container-moon');
-var howManyFlicks = 1;
 
 $button.addEventListener('click', flickSwitch);
 
 function flickSwitch(event) {
-  howManyFlicks++;
-  if (howManyFlicks % 2 === 0) {
+  if ($container.className !== 'button container-sun') {
     $container.className = 'button container-sun';
     $button.className = 'button button-sun';
-  } else if (howManyFlicks % 2 > 0) {
+  } else if ($container.className === 'button container-sun') {
     $container.className = 'button container-moon';
     $button.className = 'button button-moon';
   }
