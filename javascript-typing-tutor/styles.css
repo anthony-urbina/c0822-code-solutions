@@ -1,0 +1,29 @@
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+span {
+  font-family: "Courier New", Courier, monospace, sans-serif;
+}
+
+.black {
+  font-size: larger;
+}
+
+.underline {
+  border-bottom: 3px solid black;
+}
+
+.green {
+  color: #19cd1b;
+}
+
+.red {
+  color: #f80b09;
+  border-bottom: 3px solid #f80b09;
+}
