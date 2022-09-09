@@ -9,12 +9,11 @@ return the value of the new container
 
 function lastChars(length, string) {
   var container = '';
+  if (length > string.length) {
+    length = string.length;
+  }
   for (var i = 0; i < length && i < string.length; i++) {
-    if (length > string.length) {
-      length = string.length;
-      container += string[string.length - length + i];
-      continue;
-    }
+
     container += string[string.length - length + i];
   }
   return container;
