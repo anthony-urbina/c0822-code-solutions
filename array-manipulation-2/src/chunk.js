@@ -27,42 +27,34 @@ Let the statement iterate, pushing each leftover value into the sub array Up unt
 Then push the sub container to the main container and empty the sub container
 Return the value of the container
 
+iterate through each item in the array
+adding each one to the mini-container
+when amount in the mini container matches size
+push the mini to the main
+then clear mini
+and reset the counter for items in the mini container
+if there are items left over,
+continue sending them to the miniContainer
+if the size of the mini container becomes greater than size but is still less than or equal to the last character, send it to main
 */
 
 function chunk(array, size) {
   var container = [];
   var miniContainer = [];
-  for (var i = 0; i < array.length; i++) {
-    if (array.length % size === 0) {
-      if (i < size) {
-        miniContainer.push(array[i]);
-        if (miniContainer.length === size) {
-          container.push(miniContainer);
-          miniContainer = [];
-        }
-      } else if (i >= size && i < array.length) {
-        miniContainer.push(array[i]);
-        if (miniContainer.length === size) {
-          container.push(miniContainer);
-          miniContainer = [];
-        }
-      }
-    } else if (size % array.length !== 0) {
-      if (i < size) {
-        miniContainer.push(array[i]);
-        if (miniContainer.length === size) {
-          container.push(miniContainer);
-          miniContainer = [];
-        }
-      } else if (i >= size && i < array.length) {
-        miniContainer.push(array[i]);
-        if (miniContainer.length === array.length - size || miniContainer.length === size || miniContainer.length === array.length - i) {
-          container.push(miniContainer);
-          miniContainer = [];
-
-        }
-      }
-    }
+  if (array.length === 0) {
+    return [];
   }
-  return container;
+  for (var i = 0; i <= array.length; i++) {
+    if (i === array.length) {
+      if (array[i] === undefined) {
+        container.push(miniContainer);
+        miniContainer = [];
+        return container;
+      }
+    } else if (miniContainer.length === size) {
+      container.push(miniContainer);
+      miniContainer = [];
+    }
+    miniContainer.push(array[i]);
+  }
 }
