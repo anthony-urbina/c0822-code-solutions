@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.container-sun {
+  background-color: antiquewhite;
+  transition: 0.25s;
+}
+
+.container-moon {
+  background-color: black;
+}
+
+.row {
+  display: flex;
+}
+
+.alignment-height-row {
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.button-sun {
+  border: solid 2px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10rem;
+  background-color: #f9f279;
+  border-color: #f9f279;
+  filter: drop-shadow(0 0 0.75rem #fff97d);
+}
+
+.button-moon {
+  border: solid 2px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10rem;
+  background-color: #272424;
+  border-color: #272424;
+  filter: drop-shadow(0 -6mm 4mm rgb(0 0 0));
+}
