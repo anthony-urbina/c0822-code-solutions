@@ -10,13 +10,12 @@ when all indexed have been searched, return the value of the container
 */
 
 function takeRight(array, count) {
+  if (count > array.length) {
+    return array;
+  }
   var container = [];
   for (var i = 0; i < count; i++) {
-    if (count > array.length) {
-      return array;
-    } else {
-      container.push(array[array.length - count + i]);
-    }
+    container.push(array[array.length - count + i]);
   }
   return container;
 }
