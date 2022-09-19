@@ -19,13 +19,15 @@ var calculator = {
     var numberBank = 0;
     for (var i = 0; i < numbers.length; i++) {
       numberBank += numbers[i];
-    } return numberBank;
+    }
+    return numberBank;
   },
   getAverage: function (numbers) {
     var numberBank = 0;
     for (var i = 0; i < numbers.length; i++) {
       numberBank += numbers[i];
       var numbersAverage = numberBank / numbers.length;
-    } return numbersAverage;
+    }
+    return numbersAverage;
   }
 };
