@@ -37,10 +37,10 @@ Account.prototype.getBalance = function () {
       } else if (this.transactions[i].type === 'withdrawal') {
         withdrawals += this.transactions[i].amount;
       }
-      var fundsAvailable = deposits - withdrawals;
+      var balance = deposits - withdrawals;
     }
   }
-  return fundsAvailable;
+  return balance;
 };
 
 // Account.prototype.withdraw =
