@@ -24,6 +24,9 @@ body {
 .circle-icon-box {
   text-align: center;
   padding-bottom: 2rem;
+  margin-left: 8rem;
+  padding-left: 8rem;
+  cursor: pointer;
 }
 
 .hidden.pokemon {
@@ -38,4 +41,9 @@ body {
 h1 {
   color: #7895b2;
   font-family: Nunito, sans-serif;
+}
+
+.fa-solid,
+.fa-regular {
+  cursor: pointer;
 }
