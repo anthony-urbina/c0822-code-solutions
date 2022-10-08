@@ -1,71 +1,52 @@
 /* exported isAnagram */
 /*
 create a storage container
-look through the first word
-get the first letter, then compare it to every letter in the second word until you find a match
-*dont loop thru entire second word loop through length of first word*
-when you find a match, send it to the storage container
-do this for each letter in the first word until there are no more
-once done, compare the storage container to og string 1
-if theyre equal then return true
-if not return false
+i want to figure out how many times a letter appears in a word
+i should go through the first word, and if that letter has not appeared before i would likes to send it to the storage container and say that it appeared once
+if i continue traversing the word and run into it again
+then i update the storage container to say that it appeated twice
+do this until you run out of letters to check
+then make a second storage container and repeat the process for the second word
 
-this doesnt work because it doesn't remove newSecondString[i] that matches newFirstString[i]
-this cant happen, it throws the whole thing off
-so how do i get rid of a character when it matches
-
-if a word has x occurences of a letter
-but that x occurences of that letter is not present in the other word
-then it should return false
-
-how would i check that string have the same ammount of a certain character
-if first string at i is equal to any of the letters that were already pushed then it should skip
-
-create a storage container
-compare the first letter of string1 to every letter of string2
-if its a match and not already in the container then push it to the container and move on to the next character in string 2
-but if it does match a letter in the container you need to skip that character in the second string and keep searching the rest of it
-
-but then wont the same thing happen when you reach the letter again
-
-i can delete the letter
-save it's index
-then add it back after
+now to compare the storage containers i will compare the first letter's appearance count to the same letter's appearance count in the second container
+create a ledger that keeps track of truth/false
+if the counts are equal && both words have the same amount of letters then set the leger variable equal to true
+or else set it to false
+after a letter is evaluated check the value of the ledger
+if its true do nothing,
+if it's false return false
+if youre able to traverse the entire word successfully then return true
 */
 
-// function isAnagram(firstString, secondString) {
-//   var storage = '';
-//   var newSecondString = secondString.replace(/ /g, '');
-//   var newFirstString = firstString.replace(/ /g, '');
-
-//   for (var i = 0; i < newFirstString.length; i++) {
-//     for (var j = 0; j <= newSecondString.length; j++) {
-//       if (newFirstString[i] === newSecondString[j] && storage.includes(newFirstString[i])) {
-//         storage = storage.concat(newFirstString[i]);
-//         newSecondString[i].replace('');
-//         break;
-//       } else if (newFirstString[i] === newSecondString[j] && !storage.includes(newFirstString[i])) {
-//         storage = storage.concat(newFirstString[i]);
-//         newSecondString[i].replace('');
-//         break;
-//       }
-//     }
-//   }
-//   if (storage === newFirstString) {
-//     return true;
-//   } else { return false; }
-// }
-
 function isAnagram(firstString, secondString) {
-  var container = '';
+  var container = {};
+  var container2 = {};
   var newSecondString = secondString.replace(/ /g, '');
   var newFirstString = firstString.replace(/ /g, '');
+
   for (var i = 0; i < newFirstString.length; i++) {
-    if (newFirstString.includes(newSecondString[i]) && newFirstString.length === newSecondString.length) {
-      container = newFirstString;
+    if (i === 0 || container[newFirstString[i]] === undefined) {
+      container[newFirstString[i]] = 1;
+    } else if (container[newFirstString[i]] !== null) {
+      container[newFirstString[i]]++;
+    }
+
+    if (i === 0 || container2[newSecondString[i]] === undefined) {
+      container2[newSecondString[i]] = 1;
+    } else if (container2[newSecondString[i]] !== null) {
+      container2[newSecondString[i]]++;
     }
   }
-  if (container === newFirstString) {
-    return true;
-  } else { return false; }
+  var isEqual = null;
+  for (var key in container) {
+    if (container[key] === container2[key] && newSecondString.length === newFirstString.length) {
+      isEqual = true;
+    } else {
+      isEqual = false;
+    }
+    if (isEqual === false) {
+      return false;
+    }
+  }
+  return true;
 }
