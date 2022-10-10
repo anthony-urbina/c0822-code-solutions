@@ -1,0 +1,47 @@
+body {
+  background-color: #f5efe6;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.column-one-third {
+  flex-basis: calc(100%/3);
+  align-items: center;
+}
+
+.circle-icon-box {
+  text-align: center;
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+
+.hidden.pokemon {
+  display: none;
+}
+
+.main {
+  border: solid black;
+  flex-basis: 700px;
+}
+
+h1 {
+  color: #7895b2;
+  font-family: Nunito, sans-serif;
+}
+
+.fa-solid,
+.fa-regular {
+  cursor: pointer;
+}
