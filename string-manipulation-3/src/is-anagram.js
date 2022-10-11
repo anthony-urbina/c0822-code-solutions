@@ -20,19 +20,14 @@ function isAnagram(firstString, secondString) {
   var arrFirst = newFirstString.split('');
   var arrSecond = newSecondString.split('');
 
-  if (newFirstString.length !== newSecondString.length) {
-    return false;
-  }
+  arrFirst = arrFirst.sort();
+  arrSecond = arrSecond.sort();
+  arrFirst = arrFirst.join('');
+  arrSecond = arrSecond.join('');
 
-  for (var i = 0; i < arrFirst.length; i++) {
-    if (arrSecond.includes(arrFirst[i])) {
-      var charLocation = arrSecond.indexOf(arrFirst[i]);
-      arrSecond.splice(charLocation, 1);
-    } else {
-      return false;
-    }
-  }
-  if (arrSecond.length === 0) {
+  if (arrFirst === arrSecond) {
     return true;
+  } else {
+    return false;
   }
 }
