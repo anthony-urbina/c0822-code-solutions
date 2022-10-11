@@ -1,0 +1,500 @@
+   83  git push origin css-ecommercs-page
+   84  git push origin css-ecommerce-page
+   85  git switch main
+   86  git pull origin main
+   87  git switch css-four-column-layout
+   88  git switch css-two-column-layout
+   89  git status
+   90  git add css-two-column-layout
+   91  git status
+   92  git commit -m "completed css-two-column-layout exercise"
+   93  git push origin css-two-column-layout
+   94  git swith main
+   95  git pull origin main
+   96  git switch main
+   97  git pull orign main
+   98  git switch css-canvas-medical
+   99  git status
+  100  git add css-canvas-medical
+  101  git status
+  102  git commit -m "used css-layout-classes as a model to restructure my css and html"
+  103  git commit -m "used css-layout-classes as a model to restructure my css and html"
+  104  git add css-canvas-medical
+  105  git commit -m "used css-layout-classes as a model to restructure my css and html"
+  106  git push origin css-canvas-medical
+  107  git status
+  108  git push origin main
+  109  git switch main
+  110  git pull pull origin main
+  111  git pull origin main
+  112  git branch string-manipulation-1
+  113  git branch string-manipulation-2
+  114  git switch string-manipulation-2
+  115  git status
+  116  git add string-manipulation-1
+  117  git add string-manipulation-2
+  118  git commit -m "completed string-manipulation-2 exercise"
+  119  git push origin string-manipulation-2
+  120  git switch main
+  121  git pull origin main
+  122  git branch array-manipulation-2
+  123  git switch array-manipulation-2
+  124  git add
+  125  git status
+  126  git add array-manipulation-2
+  127  git status
+  128  git commit -m "saving progress array-manipulation-2"
+  129  git commit -m "saving progress array-manipulation-2"
+  130  git add array-manipulation-2
+  131  git commit -m "saving progress array-manipulation-2"
+  132  git push origin array-manipulation-2
+  133  git switch main
+  134  git pull origin main
+  135  git branch dom-querying
+  136  git switch dom-quertying
+  137  git switch dom querying
+  138  git switch dom-querying
+  139  git status
+  140  git add dom-querying
+  141  git commit -m "dom-querying"
+  142  git push origin dom-querying
+  143  git switch main
+  144  git pull origin main
+  145  git switch css-ecommerce-page
+  146  git add css-ecommerce-page
+  147  git commit -m "fixed column class names css-ecommerce-page"
+  148  git push origin css-ecommerce-page
+  149  git switch main
+  150  git pull origin main
+  151  git branch dom-events
+  152  git switch dom-events
+  153  git add dom-events
+  154  git commit -m "completed dom-events exercise"
+  155  git push origin dom-events
+  156  git switch main
+  157  git pull origin main
+  158  git switch css-two-column-layout
+  159  git add css-two-column-layout
+  160  git commit -m "deleted numbered rows"
+  161  git push origin css-two-column-layout
+  162  git switch main
+  163  git pull origin main
+  164  git status
+  165  git branch dom-manipulation
+  166  git switch dom-manipulation
+  167  git add dom-manipulation
+  168  git commit -m "completed dom-manipulation exercise"
+  169  git add dom-manipulation
+  170  git commit -m "completed dom-manipulation exercise"
+  171  git push origin dom-manipulation
+  172  git add dom-manipulation
+  173  git commit -m "completed dom-manipulation exercise"
+  174  git push origin dom-manipulation
+  175  git switch main
+  176  git pull origin main
+  177  git branch javascript-lightbulb
+  178  git switch javascript-lightbulb
+  179  git add javascript-lightbulb
+  180  git status
+  181  git branch -m javascript-light-bulb
+  182  git status
+  183  git add javascript-light-bulb
+  184  git commit -m "completed javascript-light-bulb exercise"
+  185  git push origin javascript-light-bulb
+  186  git switch main
+  187  git pull origin main
+  188  git switch array-manipulation-2
+  189  git status
+  190  git add array-manipulation-3
+  191  git add array-manipulation-2
+  192  git commit -m "saving progress array-manipulation-2 exercise"
+  193  git push origin array-manipulation-2
+  194  git switch main
+  195  git pull origin main
+  196  git branch javascript-forms
+  197  git switch javascript-forms
+  198  git status
+  199  git add javascript-forms
+  200  git commit -m "saving progress javascript-forms"'
+  201  git status
+  202  "
+  203  git commit -m "saving progress javascript-forms"
+  204   git commit -m "saving progress javascript-forms"
+  205  git push origin javascript-forms
+  206  git switch main
+  207  git pull origin main
+  208  git branch dom-creation
+  209  git swtich dom-creation
+  210  git switch dom-creation
+  211  git add dom creation
+  212  git add dom-creation
+  213  git commit -m "completed dom-creation exercise"
+  214  git push origin dom-creation
+  215  git switch main
+  216  git pull origin main
+  217  git branch css-media-queries
+  218  git switch css-media-queries
+  219  git add css-media-queries
+  220  git commit "completed css-media-queries exercise"
+  221  git commit -m "completed css-media-queries exercise"
+  222  git push origin css-media-queries
+  223  git switch main
+  224  git pull origin main
+  225  git branch javascript-modal
+  226  git switch javascript-modal
+  227  git status
+  228  git add javascript-model
+  229  git add javascript-modal
+  230  git add javascript-modal
+  231  git commit -m "completed javascript-modal exercise"
+  232  git push origin javascript-modal
+  233  git switch main
+  234  git pull origin main
+  235  git switch css-two-column-layout
+  236  git add css-two-column-layout
+  237  git commit -m "removed styling from any column classes"
+  238  git push origin css-two-column-layout
+  239  git switch main
+  240  git pull origin main
+  241  git switch javascript light-bulb-exercise
+  242  git switch javascript-lightbulb-exercise
+  243  git switch javascript-light-bulb-exercise
+  244  git switch javascript-light-bulb
+  245  git commit -m "replaced clickCounter with a boolean javascript-light-bulb"
+  246  git add javascript-light-bulb
+  247  git commit -m "replaced clickCounter with a boolean javascript-light-bulb"
+  248  git push origin javascript-light-bulb
+  249  git switch main
+  250  git pull origin main
+  251  git switch array-manipulation-2
+  252  git status
+  253  git add array-manipulation-2
+  254  git status
+  255  git commit -m "placed if statement outside of the function in take-right-js"
+  256  git status
+  257  git push origin array-manipulation-2
+  258  git switch main
+  259  git pull origin main
+  260  git branch javascript-custom-methods
+  261  git branch --list
+  262  git switch javascript-custom-methods
+  263  git status
+  264  git add javascript-custom-methods
+  265  git status
+  266  git commit -m "completed javascript-custom-methods exercise"
+  267  git push origin javascript-custom-methods
+  268  git switch main
+  269  git pull origin main
+  270  git switch javascript-custom-methods
+  271  git status
+  272  git switch javascript-custom-methods
+  273  git status
+  274  git restore javascript-custom-methods
+  275  git restore javascript-custom-methods/
+  276  git switch javascript-custom-methods
+  277  git status
+  278  git status
+  279  git switch javascript-custom-methods
+  280  git pull origin main
+  281  git status
+  282  git switch javascript-custom-methods
+  283  git status
+  284  rm -rf javascript-custom-methods
+  285  git switch javascript-custom-methods
+  286  git commit -m "revisions made: no code on the same line on curly brace:"
+  287  git add javascript-custom-methods
+  288  git status
+  289  git commit -m "revisions made: no code on the same line on curly brace:"
+  290  git push origin javascript-custom-methods
+  291  git switch main
+  292  git pull origin main
+  293  git branch javascript-this
+  294  git switch javascript-this
+  295  git status
+  296  git add javascript-this
+  297  git commit -m "completed javascript-this exercise"
+  298  git push origin javascript-this
+  299  git switch main
+  300  git pull origin main
+  301  git branch javascript-prototypes
+  302  git switch javascript-prototypes
+  303  git status
+  304  git add javascript-prototypes
+  305  git commit -m "completed javascript-prototypes exercise"
+  306  git add javascript-prototypes
+  307  git commit -m "completed javascript-prototypes exercise"
+  308  git status
+  309  git push origin javascript-prototypes
+  310  git switch main
+  311  git pull origin main
+  312  git pull origin main
+  313  git branch javascript-constructors
+  314  git switch javascript-constrctors
+  315  git switch javascript-constructors
+  316  git status
+  317  git restore javascript-and-json
+  318  git status
+  319  git add javascript-constructors
+  320  git status
+  321  git status
+  322  git commit -m "completed javascript-constructors exercise"
+  323  git add javascript-constructors
+  324  git commit -m "completed javascript-constructors exercise"
+  325  git push origin javascript-conductors
+  326  git push origin javascript-constructors
+  327  git switch main
+  328  git pull origin main
+  329  git branch javascript-bank
+  330  git switch javscript-bank
+  331  git switch javascript-bank
+  332  git switch main
+  333  git switch javascript-bank
+  334  git status
+  335  git status
+  336  git add javascript-bank
+  337  git commit -m "saving progress"
+  338  git push origin javascript-bank
+  339  git switch main
+  340  git status
+  341  git branch javascript-timers
+  342  git switch javascript-timers
+  343  git status
+  344  git add javascript-timers
+  345  git commit -m "completed javascript-timers exercise"
+  346  git push origin javascript-timers
+  347  git status
+  348  git switch main
+  349  git pull origin main
+  350  git switch javascript-bank
+  351  git switch main
+  352  git switch javascript-bank
+  353  git status
+  354  git switch javascript-bank
+  355  git switch main
+  356  git switch javascript-bank
+  357  git status
+  358  git add javascript-bank
+  359  git status
+  360  git commit -m "completed javascript-bank exercise"
+  361  git push origin javascript-bank
+  362  git switch main
+  363  git pull origin main
+  364  git branch javascript-carousel
+  365  git switch javascript-carousel
+  366  git status
+  367  git add javascript-carousel
+  368  git commit -m "completed javascript-carousel exercise"
+  369  git add javascript-carousel
+  370  git commit -m "completed javascript-carousel exercise"
+  371  git push origin javascript-carousel
+  372  git switch main
+  373  git pull origin main
+  374  git switch javascript-carousel
+  375  git switch main
+  376  git pull origin main
+  377  git switch javascript-bank
+  378  git status
+  379  git add javascript-bank
+  380  git push origin javascript-bank
+  381  git commit -m "adjusted the placement of certain return statements"
+  382  git push origin javascript-bank
+  383  git switch main
+  384  git switch javascript-carousel
+  385  git add javascript-carousel
+  386  git commit -m "added cursor property on icon elements"
+  387  git push origin javascript-carousel
+  388  git switch main
+  389  git status
+  390  http https://api.opensea.io/api/v1/collections?asset_owner=0x07c233C36ac7103bDDD8fdebE9935fE871BF5474&offset=0&limit=300
+  391  git branch testing
+  392  git switch testing
+  393  git switch javascript-ajax
+  394  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl
+  395  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl q==34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210
+  396  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl q=="34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210"
+  397  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key=="34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210"
+  398  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key=="34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210" \
+  399  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key=="34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210" http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key=="34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210"
+  400  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key=="34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210" http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key:"34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210"
+  401  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key=="34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210" http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key:"34335e
+  402  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key:"34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210" 
+  403  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key:"34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210" X-RapidAPI-Host: "call-of-duty-modern-warfare.p.rapidapi.com"
+  404  http https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key:"34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210" X-RapidAPI-Host:"call-of-duty-modern-warfare.p.rapidapi.com"
+  405  http GET https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key:"34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210" X-RapidAPI-Host:"call-of-duty-modern-warfare.p.rapidapi.com"
+  406  http GET https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/tbeinfinite/xbl X-RapidApi-Key:"34335e0b06msh0606982adbb6986p1d979ejsn81ababe3d210" X-RapidAPI-Host:"call-of-duty-modern-warfare.p.rapidapi.com"
+  407  git status
+  408  git restore javascript-ajax
+  409  git status
+  410  git switch main
+  411  git pull origin main
+  412  git branch planning
+  413  git switch planning
+  414  git switch main
+  415  git switch planning
+  416  git switch main
+  417  git switch string-manipulation-3
+  418  git status
+  419  git switch main
+  420  git switch planning
+  421  git switch main
+  422  git status
+  423  git switch string-manipulation-3
+  424  git status
+  425  git add string-manipulation-3
+  426  git status
+  427  git commit -m "saving progress"
+  428  git push origin string-manipulation-3
+  429  git switch main
+  430  git switch string-manipulation-3
+  431  git status
+  432  git status
+  433  git add object-manipulation-3
+  434  git add object-manipulation-3
+  435  git status
+  436  git push origin object-manipulation-3
+  437  git commit -m "completed object-manipulation-3 exercise"
+  438  git push origin object-manipulation-3
+  439  git switch main
+  440  git pull origin main
+  441  git switch string-manipulation-3
+  442  git status
+  443  git add string-manipulation-3
+  444  git add string-manipulation-3
+  445  git commit -m "revised my solution for anagrams to utilize arrays instead of objects"
+  446  git push origin string-manipulation-3
+  447  git status
+  448  git switch main
+  449  git pull origin main
+  450  git switch javascript-carousel
+  451  git status
+  452  git add javascript-carousel
+  453  git status
+  454  git commit -m "reworked solution for javascript-carousel to make use of helper functions"
+  455  git push origin javascript-carousel
+  456  git switch main
+  457  git branch es6-const-let
+  458  git switch es6-const-let
+  459  git status
+  460  git add es6-const-let
+  461  git commit -m "completed es6-const-let exercise"
+  462  git push origin es6-const-let
+  463  git switch main
+  464  git pull origin main
+  465  git branch es6 template-literals
+  466  git branch es6-template-literals
+  467  git switch es6-template-literals
+  468  git status
+  469  git add es6-template-literals
+  470  git commit -m "completed es6-template-literals exercise"
+  471  git push origin es6-template-literals
+  472  git switch main
+  473  git pull origin main
+  474  git branch add es6-destructuring
+  475  git switch es6-destructuring
+  476  git branch es6-destructuring
+  477  git switch es6-destructuring
+  478  git status
+  479  git add es6-destructuring
+  480  git commit -m "completed es6 destructuring exercise"
+  481  git push origin es6-destructuring
+  482  git switch main
+  483  git branch es6-arrow-functions
+  484  git switch es6-arrow-functions
+  485  git status
+  486  git add es6-arrow-functions
+  487  git commit -m "completed es6-arrow-functions exercise"
+  488  git push origin es6-arrow-functions
+  489  git restore es6-arrow-functions
+  490  git status
+  491  git switch main
+  492  git switch array-string-manipulation-3
+  493  git switch array-manipulation-3
+  494  git switch string-manipulation-3
+  495  git status
+  496  git add string-manipulation-3
+  497  git commit -m "completed string-manipulation-3 exercise"
+  498  git push origin string-manipulation-3
+  499  git switch main
+  500  git branch command-line-basics
+  501  git switch command-line-basics
+  502  cd command-line-basics
+  503  man man
+  504  man cat
+  505  cat laziness.txt
+  506  cat impatience.txt
+  507  cat hubris.txt
+  508  man cat
+  509  man cat laziness.txt impatience.txt hubris.txt
+  510  cat laziness.txt impatience.txt hubris.txt
+  511  cat laziness.txt impatience.txt hubris.txt > three-vitues.txt
+  512  cat three-virtues.txt
+  513  cat three-vitues.txt
+  514  man ls
+  515  ls command-line-basics
+  516  ls /workspaces/c0822-code-solutions/command-line-basics
+  517  ls -a /workspaces/c0822-code-solutions/command-line-basics
+  518  ls -F /workspaces/c0822-code-solutions/command-line-basics
+  519  man ls
+  520  ls lfz-staff/
+  521  cat lol.txt
+  522  ls -aF lfz-staff/ > lfz-staff/contents.txt
+  523  cat lfz-staff/contents.txt
+  524  git man cat
+  525  man cat
+  526  man pwd
+  527  pwd
+  528  pwd > i was-here.txt
+  529  pwd
+  530  ls
+  531  cat i
+  532  rm i
+  533  ls
+  534  man
+  535  man man
+  536  man man
+  537  pwd > i-was-here.txt
+  538  cat i-was-here.txt
+  539  ls
+  540  man echo
+  541  exch "Jello, Mundo!"
+  542  echo "Jello, Mundo!"
+  543  echo "Jello, Mundo!" > hello.txt
+  544  ls
+  545  cat hello.txt
+  546  man touch
+  547  touch tag-youre-it.txt
+  548  touch snoop/boop.txt
+  549  touch snoot/boop.txt
+  550  ls snoot/
+  551  cat boop.txt
+  552  cat snoot/boop.txt
+  553  man mkdir
+  554  mkdir parent
+  555  ls
+  556  man mkdir
+  557  mkdir -p parent/child/grandchild
+  558  touch parent/child/grandchild/.gitkeep
+  559  ls -a
+  560  ls -a parent/child/grandchild/.gitkeep
+  561  ls parent/child/grandchild/.gitkeep
+  562  ls
+  563  ls -a parent/child/grandchild/
+  564  man mv
+  565  man mv
+  566  mv pokiemans pokemon
+  567  ls
+  568  man rm
+  569  rm lol.txt
+  570  ls
+  571  man rm
+  572  rm -r kill-me/
+  573  ls
+  574  man cp
+  575  cp and-then.txt no-and-then.txt
+  576  ls
+  577  cat and-then-txt
+  578  cat and-then.txt
+  579  cat no-and-then.txt
+  580  man history
+  581  history
+  582  history > command-history.txt
