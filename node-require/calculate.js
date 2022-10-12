@@ -8,11 +8,11 @@ var y = parseInt(process.argv[4]);
 var operator = process.argv[3];
 
 if (operator === 'plus') {
-  add(x, y);
+  console.log('result:', add(x, y));
 } else if (operator === 'minus') {
-  subtract(x, y);
+  console.log('result:', subtract(x, y));
 } else if (operator === 'times') {
-  multiply(x, y);
+  console.log('result:', multiply(x, y));
 } else if (operator === 'over') {
-  divide(x, y);
+  console.log('result:', divide(x, y));
 }
