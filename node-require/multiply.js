@@ -1,4 +1,4 @@
 module.exports = function multiply(x, y) {
-  var product = x * y;
+  const product = x * y;
   return product;
 };

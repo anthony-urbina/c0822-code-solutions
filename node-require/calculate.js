@@ -3,9 +3,9 @@ const subtract = require('./subtract');
 const multiply = require('./multiply');
 const divide = require('./divide');
 
-var x = parseInt(process.argv[2]);
-var y = parseInt(process.argv[4]);
-var operator = process.argv[3];
+const x = parseInt(process.argv[2]);
+const y = parseInt(process.argv[4]);
+const operator = process.argv[3];
 
 if (operator === 'plus') {
   console.log('result:', add(x, y));

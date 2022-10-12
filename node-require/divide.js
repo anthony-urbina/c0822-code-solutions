@@ -1,4 +1,4 @@
 module.exports = function divide(x, y) {
-  var quotient = x / y;
+  const quotient = x / y;
   return quotient;
 };

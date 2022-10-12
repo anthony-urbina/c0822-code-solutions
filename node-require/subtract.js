@@ -1,4 +1,4 @@
 module.exports = function subtract(x, y) {
-  var difference = x - y;
+  const difference = x - y;
   return difference;
 };
