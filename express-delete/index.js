@@ -22,7 +22,11 @@ const grades = {
 };
 
 app.get('/api/grades', (req, res) => {
-  res.json(grades);
+  const container = [];
+  for (const key in grades) {
+    container.push(grades[key]);
+  }
+  res.json(container);
 });
 
 app.delete('/api/grades/:id', (req, res) => {
