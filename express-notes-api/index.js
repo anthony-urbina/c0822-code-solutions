@@ -79,7 +79,7 @@ app.put('/api/notes/:id', (req, res) => {
         console.error(err);
         res.status(500).json({ error: 'An unexpected error occurred.' });
       } else {
-        res.status(200).json([jsonData]).send();
+        res.status(200).json(jsonData.notes[id]).send();
       }
     });
   }
