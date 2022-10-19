@@ -81,7 +81,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
     res.status(400).json({ error: 'score must be a positive integer and must not exceed 100.' });
   } else {
     const sql = `
-      update "yo"
+      update "grades"
       set "name" = $1,
           "course" = $2,
           "score" = $3
