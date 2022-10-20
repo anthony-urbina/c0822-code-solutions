@@ -13,13 +13,13 @@ const names = [
 ];
 
 const isEven = numbers.filter(num => num % 2 === 0);
-console.log(isEven);
+console.log('isEven', isEven);
 
 const isOverFive = numbers.filter(num => num > 5);
-console.log(isOverFive);
+console.log('isOverFive', isOverFive);
 
 const startsWithE = names.filter(name => name[0] === 'E');
-console.log(startsWithE);
+console.log('startsWithE', startsWithE);
 
 const includesD = names.filter(name => {
   for (var i = 0; i < name.length; i++) {
@@ -29,4 +29,4 @@ const includesD = names.filter(name => {
   }
   return false;
 });
-console.log(includesD);
+console.log('includesD', includesD);
