@@ -17,7 +17,7 @@ const traits = [
   { trainer: 'ash' }
 ];
 
-const previousValue = 0;
+const initialValue = 0;
 
 const sum = numbers.reduce((previousValue, currentValue) => previousValue + currentValue);
 console.log('sum:', sum);
@@ -25,7 +25,7 @@ console.log('sum:', sum);
 const product = numbers.reduce((previousValue, currentValue) => previousValue * currentValue);
 console.log('product', product);
 
-const balance = account.reduce((previousValue, currentValue) => previousValue + currentValue.amount, previousValue);
+const balance = account.reduce((previousValue, currentValue) => previousValue + currentValue.amount, initialValue);
 console.log('balance:', balance);
 
 const obj = {};
