@@ -1,9 +1,3 @@
-// function ExampleClass() {
-
-// }
-
-// const example = new ExampleClass();
-
 class ExampleClass {
 
 }
