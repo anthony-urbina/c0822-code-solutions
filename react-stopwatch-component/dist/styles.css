@@ -1,0 +1,11 @@
+.frame {
+  display: flex;
+  justify-content: center;
+  border: solid black;
+  width: 150px;
+  border-radius: 5rem;
+}
+
+p {
+  font-size: 3rem;
+}
