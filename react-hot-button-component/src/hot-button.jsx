@@ -1,21 +1,20 @@
 import React from 'react';
 
-let i = 0;
-let color = 'stock';
-
 class HotButton extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { clickCounter: i };
+    this.state = { clickCounter: 0 };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
+    let i = this.state.clickCounter;
     i++;
     this.setState({ clickCounter: i });
   }
 
   render() {
+    let color;
     const clickCounter = this.state.clickCounter;
     if (clickCounter >= 3 && clickCounter < 6) {
       color = 'dark-purple';
@@ -29,6 +28,8 @@ class HotButton extends React.Component {
       color = 'yellow';
     } else if (clickCounter >= 18) {
       color = 'white';
+    } else {
+      color = 'stock';
     }
 
     return <button className={color} onClick={this.handleClick}>Hot Button</button>;
