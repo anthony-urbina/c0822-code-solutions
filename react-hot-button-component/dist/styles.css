@@ -1,0 +1,36 @@
+button {
+  font-size: 2rem;
+  color: white;
+}
+
+.stock {
+  background-color: green;
+}
+
+.dark-purple {
+  background-color: #4a2373;
+}
+
+.light-purple {
+  background-color: #674ea7;
+}
+
+.red {
+  background-color: #e06666;
+  color: black;
+}
+
+.orange {
+  background-color: #f6b26b;
+  color: black;
+}
+
+.yellow {
+  background-color: #ff0;
+  color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
