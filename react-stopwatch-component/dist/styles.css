@@ -9,3 +9,13 @@
 p {
   font-size: 3rem;
 }
+
+i {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
