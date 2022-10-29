@@ -57,7 +57,7 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-        const todosCopy = this.state.todos;
+        const todosCopy = [...this.state.todos];
         const joinedTodos = todosCopy.concat(data);
         this.setState({ todos: joinedTodos });
       })
@@ -116,8 +116,8 @@ export default class App extends React.Component {
         return response.json();
       })
       .then(data => {
-        const todosCopy = this.state.todos;
-        todosCopy[toggledTodoIndex] = data;
+        const todosCopy = [...this.state.todos];
+        todosCopy[toggledTodoIndex].isCompleted = todo.isCompleted;
         this.setState({ todos: todosCopy });
       });
 
