@@ -117,7 +117,7 @@ export default class App extends React.Component {
       })
       .then(data => {
         const todosCopy = [...this.state.todos];
-        todosCopy[toggledTodoIndex].isCompleted = todo.isCompleted;
+        todosCopy[toggledTodoIndex] = data;
         this.setState({ todos: todosCopy });
       });
 
