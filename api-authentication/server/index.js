@@ -75,7 +75,7 @@ app.post('/api/auth/sign-in', (req, res, next) => {
 
   db.query(sql, params)
     .then(result => {
-      if (!result) {
+      if (!result.rows[0]) {
         throw new ClientError(401, 'invalid login');
       } else {
         argon2.verify(result.rows[0].hashedPassword, password)
