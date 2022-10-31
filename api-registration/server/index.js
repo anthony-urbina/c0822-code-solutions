@@ -48,9 +48,6 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       db.query(sql, params)
         .then(result => {
           res.status(201).json(result.rows[0]);
-          if (!username || !password) {
-            throw new ClientError(400, 'username and password are required fields');
-          }
         })
         .catch(err => next(err));
     })
