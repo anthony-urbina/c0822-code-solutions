@@ -42,15 +42,19 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       const sql = `
         insert into "users" ("username", "hashedPassword")
              values ($1, $2)
-             returning *
+             returning "userId", "username", "createdAt"
       `;
       const params = [username, hashedPassword];
       db.query(sql, params)
         .then(result => {
           res.status(201).json(result.rows[0]);
+          if (!username || !password) {
+            throw new ClientError(400, 'username and password are required fields');
+          }
         })
         .catch(err => next(err));
-    });
+    })
+    .catch(err => next(err));
 });
 
 app.use(errorMiddleware);
