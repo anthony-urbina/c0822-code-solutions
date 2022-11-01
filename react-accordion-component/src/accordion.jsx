@@ -12,14 +12,13 @@ export default class Accordion extends React.Component {
   handleClick(event) {
     const dataView = event.target.dataset.view;
     const openTopic = this.state.openTopic;
-    let topic = null;
-
-    if (event.target.matches('.tab') && openTopic !== dataView) {
-      topic = dataView;
-    } else if (!event.target.matches('.tab') || !event.target.matches('.view')) {
+    let topic = dataView;
+    if (!event.target.matches('.tab')) {
+      return;
+    }
+    if (dataView === openTopic) {
       topic = null;
     }
-
     this.setState({ openTopic: topic });
   }
 
@@ -27,15 +26,12 @@ export default class Accordion extends React.Component {
     const topics = this.props.topics;
 
     const list = topics.map(topic =>
-      <>
         <div key={topic.title} className="tab" data-view={topic.title}>
           {topic.title}
+          <div className={this.showTopic(topic.title)}>
+            {topic.text}
+          </div>
         </div>
-        <div className={this.showTopic(topic.title)}>
-          {topic.text}
-        </div>
-      </>
-
     );
     return <>{list}</>;
   }
