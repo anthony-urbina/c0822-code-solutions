@@ -4,35 +4,48 @@ export default class Accordion extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentView: { title: null, active: null }
+      openTopic: null
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(event) {
     const dataView = event.target.dataset.view;
-    const replacement = { title: dataView, active: null };
+    const openTopic = this.state.openTopic;
+    let topic = null;
 
-    event.target.matches('.tab') &&
-      this.state.currentView.active && dataView === this.state.currentView.title
-      ? replacement.active = false
-      : replacement.active = true;
+    if (event.target.matches('.tab') && openTopic !== dataView) {
+      topic = dataView;
+    } else if (!event.target.matches('.tab') || !event.target.matches('.view')) {
+      topic = null;
+    }
 
-    let stateCopy = this.state.currentView;
-    stateCopy = replacement;
-    this.setState({ currentView: stateCopy });
+    this.setState({ openTopic: topic });
   }
 
-  showHTML() {
-    return this.state.currentView.title === 'html' && this.state.currentView.active === true && this.props.topics[0].text;
+  createList() {
+    const topics = this.props.topics;
+
+    const list = topics.map(topic =>
+      <>
+        <div key={topic.title} className="tab" data-view={topic.title}>
+          {topic.title}
+        </div>
+        <div className={this.showTopic(topic.title)}>
+          {topic.text}
+        </div>
+      </>
+
+    );
+    return <>{list}</>;
   }
 
-  showCSS() {
-    return this.state.currentView.title === 'css' && this.state.currentView.active === true && this.props.topics[1].text;
-  }
-
-  showJS() {
-    return this.state.currentView.title === 'javascript' && this.state.currentView.active === true && this.props.topics[2].text;
+  showTopic(dataview) {
+    if (this.state.openTopic !== dataview) {
+      return 'view-hidden';
+    } else {
+      return 'view';
+    }
   }
 
   render() {
@@ -40,24 +53,7 @@ export default class Accordion extends React.Component {
       <div className='container' onClick={this.handleClick}>
         <div className='row'>
           <div className='column'>
-            <div className='tab' data-view="html">
-              HyperText Markup Language
-              <div className='view'>
-                {this.showHTML()}
-              </div>
-            </div>
-            <div className='tab' data-view="css">
-              Cascading Style Sheets
-              <div className='view'>
-                {this.showCSS()}
-              </div>
-            </div>
-            <div className='tab' data-view="javascript">
-              JavaScript
-              <div className='view'>
-                {this.showJS()}
-              </div>
-            </div>
+            {this.createList()}
           </div>
         </div>
       </div>

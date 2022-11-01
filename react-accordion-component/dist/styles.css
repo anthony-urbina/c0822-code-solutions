@@ -19,3 +19,7 @@
   background-color: white;
   border-top: solid 1px black;
 }
+
+.view-hidden {
+  display: none;
+}
