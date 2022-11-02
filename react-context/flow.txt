@@ -23,10 +23,10 @@
     - any errors are caught with next(err) and passed to the errorMiddleware
 - back on the client side
   - the fetch was made
-  - then 😉 the response body is received and parsed
-  - then 😉 we check to see if the "action" was a 'signup'
-    - if true, then we set the hash to 'sign-in'
-  - since hash was changed, the 'hashchange' event gets triggered which calls for a re-render to the 'sign-in' view
+    - then 😉 the response body is received and parsed
+    - then 😉 we check to see if the "action" was a 'signup'
+      - if true, then we set the hash to 'sign-in'
+    - since hash was changed, the 'hashchange' event gets triggered which calls for a re-render to the 'sign-in' view
 
 2. User can sign in
 - once the re-render is triggered, a new controlled form loads, it's input values are tracked via the onChange event
@@ -39,5 +39,51 @@
   - else we query our database using params (we never use raw data for db queries)
     - in this query we are selecting the "userId", "hashedPassword" from the users table, but only for the username property of the req body
     - then 😉 if the username we queried for does not exist, we throw an error and send a 401 'invalid login' response to the user
-    - else we use argon2.verify(hashedPassword, password) to check if the salt + password result in the correct hashedPassword
-      - then 😉 if
+    - else we use argon2.verify(hashedPassword, password) which returns a promise
+      - then 😉 if the verification is not successful we throw a '401 invalid login' error
+      - else
+        - we create a payload object w userId and username
+        - then create a token w jwt.sign(payload, process.env.TOKEN_SECRET)
+        - then send a response to the client containing the user token and payload
+    - catch any errors (only one catch bc argon2.verify() promise chain is being returned to it's then so if it argon fails the main chain will get rejected)
+- back to the client side
+  - the fetch was made
+    - then 😉 if result.user and result.token are found in the response
+      - this.props.onSignIn(result) gets called (which is a call back passed as a prop from auth.jsx, who received it as a context property from app.jsx)
+        - which stores the users token in local storage
+        - and calls setState({user}) to update user property with the current user
+        - the page re-renders after setState() is called
+        - in class AuthPage (components/auth-form.jsx) there is a guard that returns a Redirect that updates the hash to ""
+          - this calls setState() again, triggering yet another re-render which loads the home page
+
+
+3. User can stay signed in (even if they refresh the page)
+- when a user hits refresh
+  - componentDidMount() gets called after render()
+    - then it check local storage for a user token
+      - if it has one then it calls jwtDecode(token) and assigns the return to user
+      - else null is assigned to user
+    - then setState({user, isAuthorizing: false}) gets called (updates user to the token that was in local storage and sets isAuthorizing to false)
+    - this triggers a re-render which loads the home page again bc path is still '' after React runs into the guard clause on components/auth-form.jsx
+- when a user does not hit refresh, they will still remain signed in because their user info is held in state
+-  and path remains equal to ''
+  - this allows the Home class component in pages/home.jsx to fire as long as user is not null
+
+4. User can sign out
+- user clicks the 'Sign Out' button
+  - which triggers the onClick event in the Navbar component in client/components/nav-bar.jsx
+    - which triggers the hangleSignOut callback in app.jsx
+    - this removes the current token being stored in local storage
+    - and call setState({user: null}), triggering yet another re-render
+    - this time, when React is working it's way through Navbar, it checks to see if this.state.user is null
+    - if true then show a 'sign out' button
+    - else show 'sign in' and 'sign up' buttons including href props for both
+  - after Navbar gets rendered, this.renderPage() is called
+    - path is '' so it returns <Home/> in home.jsx
+      - Home's render has a gaurd clause that says
+        - if this.context.user is null (user property in state) then return a Redirect that updated the hash to 'sign-in'
+          - this triggers the 'hashchange' event which calls for a page rerender
+  - render() is called in App while  this.state.user value as null and this.state.path as 'sign-in'
+    - so it will return <Auth/>
+      -  since there is no user, it will return an expression
+        - the expression contains <AuthForm/> which will return the form
