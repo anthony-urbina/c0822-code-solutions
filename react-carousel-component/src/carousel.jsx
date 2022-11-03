@@ -18,7 +18,7 @@ export default class Carousel extends React.Component {
   }
 
   showNextIndex() {
-    this.state.currentIndex === 4
+    this.state.currentIndex === this.props.pokemon.length - 1
       ? this.setState({ currentIndex: 0 })
       : this.setState({ currentIndex: this.state.currentIndex + 1 });
     this.controlInterval();
@@ -26,23 +26,15 @@ export default class Carousel extends React.Component {
 
   showPreviousIndex() {
     this.state.currentIndex === 0
-      ? this.setState({ currentIndex: 4 })
+      ? this.setState({ currentIndex: this.props.pokemon.length - 1 })
       : this.setState({ currentIndex: this.state.currentIndex - 1 });
     this.controlInterval();
   }
 
   selectImage() {
     const currentIndex = this.state.currentIndex;
-    return currentIndex === 0
-      ? this.props.pokemon.bulbasaur
-      : currentIndex === 1
-        ? this.props.pokemon.charmander
-        : currentIndex === 2
-          ? this.props.pokemon.squirtle
-          : currentIndex === 3
-            ? this.props.pokemon.pikachu
-            : currentIndex === 4 &&
-              this.props.pokemon.jigglypuff;
+    return this.props.pokemon[currentIndex].src;
+
   }
 
   fillCircle(id) {
@@ -62,6 +54,14 @@ export default class Carousel extends React.Component {
     clearInterval(this.state.intervalID);
     const intervalID = setInterval(this.showNextIndex, 3000);
     this.setState({ intervalID });
+  }
+
+  renderCircles(props) {
+    const pokemon = props;
+    const circles = pokemon.map(pokemon => {
+      return <i key={pokemon.name} data-view-id={props.indexOf(pokemon)} className={this.fillCircle(props.indexOf(pokemon))}></i>;
+    });
+    return circles;
   }
 
   render() {
@@ -88,11 +88,7 @@ export default class Carousel extends React.Component {
               <div className='row'>
                 <div className='column-full'>
                   <div className='circle-icon-box' onClick={this.showClicked}>
-                    <i data-view-id="0" className={this.fillCircle(0)}></i>
-                    <i data-view-id="1" className={this.fillCircle(1)}></i>
-                    <i data-view-id="2" className={this.fillCircle(2)}></i>
-                    <i data-view-id="3" className={this.fillCircle(3)}></i>
-                    <i data-view-id="4" className={this.fillCircle(4)}></i>
+                    {this.renderCircles(this.props.pokemon)}
                   </div>
                 </div>
               </div>
