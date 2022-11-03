@@ -1,0 +1,53 @@
+body {
+  background-color: #f5efe6;
+}
+
+h1 {
+  color: #7895b2;
+  font-family: Nunito, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-one-half {
+  flex-basis: calc(100%/2);
+}
+
+.column-one-third {
+  flex-basis: calc(100%/3);
+}
+
+.frame {
+  border: solid black;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+.circle-icon-box {
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fa-circle {
+  padding: 0.1rem;
+}
+
+.prev-icon {
+  font-size: 32px;
+}
