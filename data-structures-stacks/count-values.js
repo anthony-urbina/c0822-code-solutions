@@ -1,10 +1,11 @@
 /* exported countValues */
+let counter = 0;
 
 function countValues(stack) {
-  const gutter = [];
-  while (stack.peek()) {
-    const removed = stack.pop();
-    gutter.push(removed);
+  counter = 0;
+  while (stack.peek() !== undefined) {
+    stack.pop();
+    counter++;
   }
-  return gutter.length;
+  return counter;
 }
