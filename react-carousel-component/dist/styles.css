@@ -7,6 +7,10 @@ h1 {
   font-family: Nunito, sans-serif;
 }
 
+i {
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   max-width: 100%;
@@ -27,6 +31,7 @@ h1 {
 
 .frame {
   border: solid black;
+  padding: 0 2rem;
 }
 
 .vertical-center {
