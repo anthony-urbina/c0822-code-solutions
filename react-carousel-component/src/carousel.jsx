@@ -103,38 +103,42 @@ import React, { useState, useEffect } from 'react';
 export default function Carousel({ pokemon }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [intervalID, setIntervalID] = useState(null);
-  // componentDidMount() {
-  //   const intervalID = setInterval(showNextIndex, 1000);
-  //   this.setState({ intervalID });
-  // }
 
-  const showNextIndex = () => {
-    currentIndex === pokemon.length - 1
-      ? setCurrentIndex(0)
-      : setCurrentIndex(index => index + 1);
+  const reset = () => {
+    clearInterval(intervalID);
+    const id = setInterval(() => {
+      setCurrentIndex(index => {
+        if (index === 4) return 0;
+        else return index + 1;
+      });
+      setIntervalID(id);
+    }, 1000);
   };
 
   useEffect(() => {
     const id = setInterval(() => {
-      currentIndex === pokemon.length - 1
-        ? setCurrentIndex(0)
-        : setCurrentIndex(index => index + 1);
+      setCurrentIndex(index => {
+        if (index === 4) return 0;
+        else return index + 1;
+      });
+      setIntervalID(id);
     }, 1000);
-    setIntervalID(id);
-    return () => clearInterval(id);
-  }, [currentIndex, pokemon]);
 
-  const controlInterval = () => {
-    clearInterval(intervalID);
-    const id = setInterval(showNextIndex, 1000);
-    setIntervalID(id);
-  };
+    return () => clearInterval(id);
+  }, []);
 
   const showPreviousIndex = () => {
     currentIndex === 0
       ? setCurrentIndex(pokemon.length - 1)
-      : setCurrentIndex(index => index - 1);
-    controlInterval();
+      : setCurrentIndex(currentIndex - 1);
+    reset();
+  };
+
+  const showNextIndex = () => {
+    currentIndex === pokemon.length - 1
+      ? setCurrentIndex(0)
+      : setCurrentIndex(currentIndex + 1);
+    reset();
   };
 
   const selectImage = () => {
@@ -148,14 +152,14 @@ export default function Carousel({ pokemon }) {
   };
 
   const showClicked = event => {
-    const id = Number.parseInt(event.target.dataset.viewId);
+    const id = Number(event.target.dataset.viewId);
     setCurrentIndex(id);
-    controlInterval();
+    reset();
   };
 
-  const renderCircles = props => {
-    const circles = pokemon.map(pokemon => {
-      return <i key={pokemon.name} data-view-id={props.indexOf(pokemon)} className={fillCircle(props.indexOf(pokemon))}></i>;
+  const renderCircles = () => {
+    const circles = pokemon.map(poke => {
+      return <i key={poke.name} data-view-id={pokemon.indexOf(poke)} className={fillCircle(pokemon.indexOf(poke))}></i>;
     });
     return circles;
   };
@@ -183,7 +187,7 @@ export default function Carousel({ pokemon }) {
               <div className='row'>
                 <div className='column-full'>
                   <div className='circle-icon-box' onClick={showClicked}>
-                    {renderCircles(pokemon)}
+                    {renderCircles()}
                   </div>
                 </div>
               </div>
