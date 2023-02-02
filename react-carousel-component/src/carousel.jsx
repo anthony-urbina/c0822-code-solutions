@@ -111,8 +111,8 @@ export default function Carousel({ pokemon }) {
         if (index === 4) return 0;
         else return index + 1;
       });
-      setIntervalID(id);
     }, 1000);
+    setIntervalID(id);
   };
 
   useEffect(() => {
