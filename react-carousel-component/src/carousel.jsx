@@ -99,6 +99,7 @@ import React, { useState, useEffect } from 'react';
 //     );
 //   }
 // }
+//
 
 export default function Carousel({ pokemon }) {
   const [currentIndex, setCurrentIndex] = useState(0);
