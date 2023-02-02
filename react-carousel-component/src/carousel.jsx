@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // export default class Carousel extends React.Component {
 //   constructor(props) {
@@ -13,7 +13,7 @@ import React, { useState, useEffect } from 'react';
 //   }
 
 //   componentDidMount() {
-//     const intervalID = setInterval(this.showNextIndex, 3000);
+//     const intervalID = setInterval(this.showNextIndex, 1000);
 //     this.setState({ intervalID });
 //   }
 
@@ -21,14 +21,15 @@ import React, { useState, useEffect } from 'react';
 //     this.state.currentIndex === this.props.pokemon.length - 1
 //       ? this.setState({ currentIndex: 0 })
 //       : this.setState({ currentIndex: this.state.currentIndex + 1 });
+//     this.controlInterval();
 //   }
 
-// showPreviousIndex() {
-//   this.state.currentIndex === 0
-//     ? this.setState({ currentIndex: this.props.pokemon.length - 1 })
-//     : this.setState({ currentIndex: this.state.currentIndex - 1 });
-//   this.controlInterval();
-// }
+//   showPreviousIndex() {
+//     this.state.currentIndex === 0
+//       ? this.setState({ currentIndex: this.props.pokemon.length - 1 })
+//       : this.setState({ currentIndex: this.state.currentIndex - 1 });
+//     this.controlInterval();
+//   }
 
 //   selectImage() {
 //     const currentIndex = this.state.currentIndex;
@@ -99,7 +100,6 @@ import React, { useState, useEffect } from 'react';
 //     );
 //   }
 // }
-//
 
 export default function Carousel({ pokemon }) {
   const [currentIndex, setCurrentIndex] = useState(0);
